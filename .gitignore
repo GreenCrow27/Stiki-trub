@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+
+# Build / dist
+build/
+dist/
+*.spec.bak
+
+# Runtime data
+recordings/
+logs/
+*.mp4
+*.avi
+
+# Local secrets (copy config.example.json → config.json)
+config.json
+main.py.backup
+get-pip.py
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Calibration (optional local)
+charuco_calibration.npz
