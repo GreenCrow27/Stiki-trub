@@ -8,16 +8,19 @@ venv/
 # IDE
 .idea/
 
-# Build / dist
-build/
-dist/
+# Build / dist (см. build/README.md, dist/README.md)
+build/*
+!build/README.md
+dist/*
+!dist/README.md
 *.spec.bak
 
-# Runtime data (videos not in git)
+# Runtime data (видео в git не кладём)
 recordings/*
-!recordings/.gitkeep
+!recordings/README.md
 logs/*
-!logs/.gitkeep
+!logs/README.md
+!logs/measures.csv
 *.mp4
 *.avi
 
