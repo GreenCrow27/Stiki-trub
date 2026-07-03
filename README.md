@@ -9,10 +9,12 @@ python -m venv .venv
 .venv\Scripts\activate          # Windows
 # source .venv/bin/activate   # Linux
 pip install -r requirements.txt
-copy config.example.json config.json   # отредактируйте IP, пароль RTSP, Modbus
 python main.py
 ```
 
-Сборка exe: см. [BUILD.md](BUILD.md).
+`config.json` — рабочий конфиг (IP камеры, Modbus, ROI).  
+`config.example.json` — шаблон без паролей.
+
+Сборка exe: см. [BUILD.md](BUILD.md) (`dist/` в git не кладём — ~240 МБ, собирается локально).
 
 Настройки в runtime: `NASTROYKI.txt`, коды ошибок: `ERRORS.txt`.

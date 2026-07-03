@@ -13,14 +13,15 @@ build/
 dist/
 *.spec.bak
 
-# Runtime data
-recordings/
-logs/
+# Runtime data (videos not in git)
+recordings/*
+!recordings/.gitkeep
+logs/*
+!logs/.gitkeep
 *.mp4
 *.avi
 
-# Local secrets (copy config.example.json → config.json)
-config.json
+# Optional local backup
 main.py.backup
 get-pip.py
 
